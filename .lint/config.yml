@@ -1,0 +1,24 @@
+linters:
+  enable:
+  # Enable specific linter
+  # https://golangci-lint.run/usage/linters
+    - asciicheck
+    - durationcheck
+    - errorlint
+    - gocyclo
+    - gofmt
+    - goimports
+    - gosec
+    - maintidx
+    - wastedassign
+    - exportloopref
+issues:
+  exclude-rules:
+    # Exclude some linters from running on tests files.
+    - path: _test\.go
+      linters:
+        - gocyclo
+        - errcheck
+        - gosec
+        - maintidx
+        - errorlint

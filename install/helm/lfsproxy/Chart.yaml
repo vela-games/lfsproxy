@@ -1,0 +1,7 @@
+apiVersion: v2
+name: lfsproxy
+description: A Helm chart for lfsproxy
+
+type: application
+version: 0.0.1
+appVersion: "0.0.1"
